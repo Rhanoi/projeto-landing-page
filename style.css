@@ -3,6 +3,7 @@
     margin:0px;
     font-family: 'Inter', sans-serif;
 }
+/*menu superior*/
 #menusuperior{
     background-image: url(src/fundoHeader.webp);
     padding:4% 0% 12% 0% ;
@@ -28,6 +29,8 @@
     margin-left: 12%;
 }
 
+
+/*Informacional*/
 .conteudoflex{
     display: flex;
     flex-direction: row;
@@ -49,7 +52,7 @@
 }
 
 
-
+/*seção vídeo*/
 #secaovideo{
    display: flex;
    flex-direction: row;
@@ -57,7 +60,10 @@
    align-items: center;
    padding: 50px;
 }
-
+#video{
+    width: 40%;
+    height: 284px;
+}
 
 #textoapresentacao{
     width: 40%;
@@ -75,12 +81,7 @@
     color: #383838;
     font-weight: 400;
 }
-
-
-
-
-
-
+/*Depoimento*/
 #depoimento{
     background-color:#247BA0;
     padding: 80px 0px 75px 0px;
@@ -89,8 +90,9 @@
     flex-direction: column;
     align-items: center;
 }
+
 #depoimento h2{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     color: #EAECE5;
     margin-bottom: 64px;
@@ -120,6 +122,8 @@
     margin-right: 25px;
     cursor: pointer;
 }
+
+/*Formulário*/
 
 #secaoFormulario{
     display: flex;
@@ -168,7 +172,110 @@ input{
     transform: translateY(-7px);
     box-shadow: 0px 15px 20px #0a263072;
     transition-duration: 0.15s;
+}
+@media only screen and (max-width:900px){
+    /*menu superior*/
+    #titulo{
+        font-size: 42px;
+        text-align: left;
+        width: 80%;
+        margin: 0 10%;
+        
+    
+    }
+    #subtitulo{
+        width: 80%;
+        font-size: 28px;
+        margin: 5% 10%;
+        text-align: left;
+    }
+    
 
+    /*informacional*/
+    .conteudoflex{
+        flex-direction: column;
+        
+    }
+    .informacao{
+        margin: 7% 0%;
+        width: 80%;
+        margin: 7% 10%;
+        
+        justify-content: center;
+    }
+    .info{
+        font-size: 24px;
+    }
+    
+    /*secao vídeo*/
+    #secaovideo{
+        flex-direction: column;
+        padding: 10% 0%;
+        align-items: none;
 
+    }
+    #video{
+        width: 80%;
+        height: 25vh;
+        margin-bottom: 5%;
+    }
+    #textoapresentacao{
+        width: 80%;
+        margin: 0% 10%;
+    }
+    #textoapresentacao h2{
+        font-size: 30px;
+    }
+    #textoapresentacao p{
+        font-size: 24px;
+        color: #383838;
+        font-weight: 400;
+    }
+    
+    /*Depoimentos*/
+    #depoimento{
 
+        padding: 5% 0%;
+        text-align: center;
+    }
+    #depoimento h2{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+    }
+    #carrossel{
+        flex-direction: column;        
+    }
+    
+    #setaEsquerda{
+        display: none;
+    }
+    #setaDireita{
+        display: none;
+    }
+    #samantha{
+        display:inline;
+    }
+    .card{
+        width: 90%;
+        margin: 2% 5%;
+    }
+
+    /*Formulário*/
+    #secaoFormulario h2{
+        font-size: 32px;
+        width: 80%;
+        margin: 5% 10%;
+    }
+    form{
+        width: 90%;
+        margin: 0% 5% 5% 5%;
+    }
+    input{
+        width: 80%;
+        margin: 0% 10% 5% 10%;
+        font-size: 20px;
+    }
+    #enviar{
+        width: 80%
+    }
 }
